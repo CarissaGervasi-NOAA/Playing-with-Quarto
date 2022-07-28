@@ -1,9 +1,9 @@
 ---
 title: "Hello, Quarto"
 author: "Carissa Gervasi"
-format: revealjs
+format: html
 editor: visual
-bibliography: references.bib
+bibliography: mendeleylibrary.bib
 ---
 
 ## Quarto
@@ -47,6 +47,6 @@ ggplot(dat, aes(x=Year, y=Angler.Trips)) +
 
 ## What else?
 
-YAY! Wow that was fun. OK now, we want to see what this looks like in different formats. Right now we are making an html file. Where does this file get saved? It gets saved automatically in our working directory. Cool, cool. Let's push this to Github and see what happens.
+YAY! Wow that was fun. OK now, we want to see what this looks like in different formats. Right now we are making an html file. Where does this file get saved? It gets saved automatically in our working directory. Cool, cool. Let's push this to Github and see what happens. [e.g., @Karnauskas2017; @Rhodes2003; @Gervasi2022].
 
-OK let's try something really fun now. See if we can add a citation. For now it looks like we can add citations for packages or from a DOI pretty easily. @dplyr here we cited the dplyr package, here is ggplot 2 [@ggplot2].
+Ok we got the Mendeley references in after some headache. Quarto does not seem to recognize the italics denoted in the titles. We will have to see about changing citation format.
