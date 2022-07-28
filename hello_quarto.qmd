@@ -1,8 +1,9 @@
 ---
 title: "Hello, Quarto"
 author: "Carissa Gervasi"
-format: html
+format: revealjs
 editor: visual
+bibliography: references.bib
 ---
 
 ## Quarto
@@ -44,4 +45,8 @@ ggplot(dat, aes(x=Year, y=Angler.Trips)) +
   theme_classic()
 ```
 
+## What else?
+
 YAY! Wow that was fun. OK now, we want to see what this looks like in different formats. Right now we are making an html file. Where does this file get saved? It gets saved automatically in our working directory. Cool, cool. Let's push this to Github and see what happens.
+
+OK let's try something really fun now. See if we can add a citation. For now it looks like we can add citations for packages or from a DOI pretty easily. @dplyr here we cited the dplyr package, here is ggplot 2 [@ggplot2].
