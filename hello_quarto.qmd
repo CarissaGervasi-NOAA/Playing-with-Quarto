@@ -50,3 +50,11 @@ ggplot(dat, aes(x=Year, y=Angler.Trips)) +
 YAY! Wow that was fun. OK now, we want to see what this looks like in different formats. Right now we are making an html file. Where does this file get saved? It gets saved automatically in our working directory. Cool, cool. Let's push this to Github and see what happens. [e.g., @Karnauskas2017; @Rhodes2003; @Gervasi2022].
 
 Ok we got the Mendeley references in after some headache. Quarto does not seem to recognize the italics denoted in the titles. We will have to see about changing citation format.
+
+## What else can we do?
+
+| Hello | Cool  | Yea |
+|-------|:-----:|:---:|
+| 1     |  dog  |  2  |
+| 3     |  cat  |  2  |
+| 87    | mouse |  3  |
