@@ -1,0 +1,47 @@
+---
+title: "Hello, Quarto"
+author: "Carissa Gervasi"
+format: html
+editor: visual
+---
+
+## Quarto
+
+This is a test document to play around with what quarto can really do. Let's say I want to play around with some of the MRIP data. First I am going to pull data from a [data query](https://www.fisheries.noaa.gov/data-tools/recreational-fisheries-statistics-queries). Let's see if we can add a hyperlink. Oh that's quite fun. OK, so we pulled data from this data query and saved it. I saved it in the My Github Projects folder on my desktop. I think it will add to Github. We will check later. OK, so we are going to do a few things here:
+
+1.  read in the data
+
+2.  plot the data
+
+3.  change up the format of the output
+
+Let's do it!
+
+## Bringing in the code
+
+OK, first let's bring in the file
+
+```{r}
+dat = read.csv("Data/mrip_effort_series_1981_2022_annual_GOM_allmodes_allareas.csv")
+head(dat)
+
+# remove year 2022 because preliminary
+dat = subset(dat, dat$Estimate.Status == "FINAL")
+
+```
+
+## Plotting the data
+
+Cool! That was step 1. Now for step 2 we want to plot the data
+
+```{r}
+#| message: false
+library(tidyverse)
+
+ggplot(dat, aes(x=Year, y=Angler.Trips)) +
+  geom_point() +
+  geom_line() +
+  theme_classic()
+```
+
+YAY! Wow that was fun. OK now, we want to see what this looks like in different formats. Right now we are making an html file. Where does this file get saved? It gets saved automatically in our working directory. Cool, cool. Let's push this to Github and see what happens.
