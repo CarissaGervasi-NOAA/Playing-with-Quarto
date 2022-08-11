@@ -3,7 +3,7 @@ title: "Hello, Quarto"
 author: "Carissa Gervasi"
 format: html
 editor: visual
-bibliography: mendeleylibrary.bib
+bibliography: references.bib
 ---
 
 ## Quarto
@@ -47,9 +47,9 @@ ggplot(dat, aes(x=Year, y=Angler.Trips)) +
 
 ## What else?
 
-YAY! Wow that was fun. OK now, we want to see what this looks like in different formats. Right now we are making an html file. Where does this file get saved? It gets saved automatically in our working directory. Cool, cool. Let's push this to Github and see what happens. [e.g., @Karnauskas2017; @Rhodes2003; @Gervasi2022].
+YAY! Wow that was fun. OK now, we want to see what this looks like in different formats. Right now we are making an html file. Where does this file get saved? It gets saved automatically in our working directory. Cool, cool. Let's push this to Github and see what happens.
 
-Ok we got the Mendeley references in after some headache. Quarto does not seem to recognize the italics denoted in the titles. We will have to see about changing citation format.
+Ok we got the Mendeley references in after some headache. Quarto does not seem to recognize the italics denoted in the titles. We will have to see about changing citation format. \*\*\*Spoiler alert - Mendeley is no good. Zotero is waaaaaaay better.
 
 ## What else can we do?
 
@@ -58,3 +58,9 @@ Ok we got the Mendeley references in after some headache. Quarto does not seem t
 | 1     |  dog  |  2  |
 | 3     |  cat  |  2  |
 | 87    | mouse |  3  |
+
+I got rid of the Mendeley library. I am going to see if I can link Zotero [@gervasi2022].
+
+HA! That was sooooo easy!!! ERMAGERD...
+
+Next we need to figure out how to change the reference format. Ok we can do it with a csl file, but we need to download them from the website. For another day.
